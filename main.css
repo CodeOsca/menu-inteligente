@@ -1,0 +1,26 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --size-menu: 100px;
+}
+
+body{
+    height: 2000px;
+}
+
+header, nav{
+    height: var(--size-menu);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(40, 44, 32);
+    transition-property: height;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+}
